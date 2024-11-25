@@ -1,0 +1,11 @@
+Following https://docs.anaconda.com/miniconda/install/#quick-command-line-install
+
+mkdir -p ~/miniconda3\ncurl https://repo.anaconda.com/miniconda/Miniconda3-latest-MacOSX-arm64.sh -o ~/miniconda3/miniconda.sh\nbash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3\nrm ~/miniconda3/miniconda.sh
+
+source ~/miniconda3/bin/activate
+
+conda create --name default
+conda activate default
+conda install -c conda-forge jupyterlab
+
+conda install -c conda-forge xarray dask netCDF4 bottleneck
