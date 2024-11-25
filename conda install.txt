@@ -9,3 +9,5 @@ conda activate default
 conda install -c conda-forge jupyterlab
 
 conda install -c conda-forge xarray dask netCDF4 bottleneck
+
+conda install -c conda-forge matplotlib
